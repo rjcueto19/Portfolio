@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjay Cueto | Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/home.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Arjay<span> M. Cueto</span></a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="active"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="skills.html"><i class="fas fa-laptop-code"></i> Skills</a></li>
+          <li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero dark-theme">
+    <div class="container hero-container">
+      <!-- Left Content -->
+      <div class="hero-text">
+        <h3>Hello, Welcome to my</h3>
+        <h1><span>Portfolio</span></h1>
+        <h2>And I'm <span class="highlight">Arjay M. Cueto</span></h2>
+
+        <div class="hero-buttons">
+          <a href="about.html" class="btn primary"><i class="fas fa-user"></i> Get to know me</a>
+          <a href="projects.html" class="btn outline"><i class="fas fa-laptop-code"></i> View Work</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/arjaycueto" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/rjcueto19" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://facebook.com/share/1636QDFWBn/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="hero-img">
+        <div class="glow-circle">
+          <img src="images/profile.png" alt="Arjay Cueto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>© 2025 Arjay Cueto — All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      hamburger.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

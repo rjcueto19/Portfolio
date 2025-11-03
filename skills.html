@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Skills | Arjay Cueto</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/skills.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Arjay<span> Cueto</span></a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="skills.html" class="active"><i class="fas fa-laptop-code"></i> Skills</a></li>
+          <li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Skills Section -->
+  <section class="skills-section dark-theme">
+    <div class="container">
+      <div class="section-title">
+        <h2>My Skills</h2>
+        <p class="subtitle">Here are the tools and technologies I use to create modern, responsive, and efficient web applications.</p>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill"><img src="images/html.png" alt="HTML"><p>HTML</p></div>
+        <div class="skill"><img src="images/css.png" alt="CSS"><p>CSS</p></div>
+        <div class="skill"><img src="images/javascript.png" alt="JavaScript"><p>JavaScript</p></div>
+        <div class="skill"><img src="images/mysql.png" alt="MySQL"><p>MySQL</p></div>
+        <div class="skill"><img src="images/csharp.png" alt="C#"><p>C#</p></div>
+        <div class="skill"><img src="images/C language.png" alt="ASP.NET"><p>C</p></div>
+        <div class="skill"><img src="images/python.png" alt="ASP.NET"><p>Python</p></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>© 2025 Arjay Cueto — All Rights Reserved.</p>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="skills.html" class="active"><i class="fas fa-laptop-code"></i> Skills</a></li>
+          <li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      hamburger.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

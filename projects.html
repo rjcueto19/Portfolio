@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects | Arjay Cueto</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/projects.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Arjay<span> M. Cueto</span></a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="skills.html"><i class="fas fa-laptop-code"></i> Skills</a></li>
+          <li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects dark-theme">
+    <div class="container">
+      <div class="section-title">
+        <h2>My Projects</h2>
+        <p class="subtitle">A showcase of the work I’ve built — from websites to web apps.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="images/Project 1.png" alt="Pokedex API">
+          </div>
+          <div class="project-info">
+            <h3>Pokedex API</h3>
+            <p>In my second year of college, my team and I developed a Pokédex web project using C# and ASP.NET Core. The system dynamically displayed Pokémon data through an API, with an HTML/CSS frontend. I handled the backend logic and API integration to ensure smooth data flow.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="images/project 2.png" alt="Mock Layout Project">
+          </div>
+          <div class="project-info">
+            <h3>Mock Layout (Funeral Website)</h3>
+            <p>My group and I designed a mock layout for a funeral website using Figma. It focused on accessibility, empathy, and professional design — balancing simplicity with emotional sensitivity for the users.</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="images/project 3.png" alt="Health Clinic Record Management System">
+          </div>
+          <div class="project-info">
+            <h3>Health Clinic Record Management System</h3>
+           <p>This system is currently being developed by my group and me as our capstone project, titled “Health Clinic Record Management System.”sensitivity for the users.</p>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="images/project 4.png" alt="Mock Layout Project">
+          </div>
+          <div class="project-info">
+            <h3>Jak en Poy</h3>
+            <p>When I was in my first year of college, my group and I created a project called “Jack en Poy,” and I was the one who did the coding. I developed it using the C programming language, which was taught to us during that time.</p>
+          </div>
+        </div>
+        <!-- Project 5 -->
+         <div class="project-card">
+          <div class="project-img">
+            <img src="images/project 5.png" alt="Mock Layout Project">
+          </div>
+          <div class="project-info">
+            <h3>Guesing Game</h3>
+            <p>When I was in my first year of college, my group and I created a project called “Guessing Game.” I was the one who did the coding using the C programming language that was taught to us.</p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>© 2025 Arjay Cueto — All Rights Reserved.</p>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="projects.html" class="active"><i class="fas fa-laptop-code"></i> Projects</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS for Mobile Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      hamburger.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Arjay Cueto</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/about.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Arjay<span> M. Cueto</span></a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="about.html" class="active"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="skills.html"><i class="fas fa-laptop-code"></i> Skills</a></li>
+          <li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about dark-theme">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p class="subtitle">Who I am and what drives me forward in tech.</p>
+      </div>
+
+      <div class="about-content">
+        <!-- Left Image -->
+        <div class="about-img">
+          <div class="glow-frame">
+            <img src="images/profile.png" alt="Arjay Cueto" />
+          </div>
+        </div>
+
+        <!-- Right Text -->
+        <div class="about-text">
+          <h3>👨‍💻 Your Future Developer</h3>
+          <p>Hello! I’m <strong>Arjay M. Cueto</strong>, a third-year college student pursuing a Bachelor of Science in Information Technology.  
+          I’m passionate about exploring new technologies, improving my coding skills, and developing creative, user-friendly solutions.  
+          Outside of coding, I enjoy playing sports which help me stay disciplined and focused — qualities that I apply in every project I do.</p>
+
+          <h3>🎯 My Goals</h3>
+          <p>My goal is to become a skilled and versatile developer in the future, creating modern web applications that are both visually appealing and efficient.  
+          I’m eager to take on new challenges, collaborate with others, and contribute to impactful tech projects.</p>
+
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>© 2025 Arjay Cueto — All Rights Reserved.</p>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="about.html" class="active"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="projects.html"><i class="fas fa-laptop-code"></i> Projects</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS for menu toggle -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      hamburger.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
